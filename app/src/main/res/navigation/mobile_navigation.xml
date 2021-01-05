@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.examen.jsonwebservice.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.examen.jsonwebservice.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/nav_stringRequest"
+        android:name="com.examen.jsonwebservice.StringRequestPrueba"
+        android:label="fragment_string_request"
+        tools:layout="@layout/fragment_string_request" />
+    <fragment
+        android:id="@+id/nav_jsonObjectRequest"
+        android:name="com.examen.jsonwebservice.JsonObjectRequestPrueba"
+        android:label="fragment_json_object_request_prueba"
+        tools:layout="@layout/fragment_json_object_request_prueba" />
+    <fragment
+        android:id="@+id/nav_jsonObjectRequestPost"
+        android:name="com.examen.jsonwebservice.JsonObjectRequestPost"
+        android:label="fragment_json_object_request_post"
+        tools:layout="@layout/fragment_json_object_request_post" />
+    <fragment
+        android:id="@+id/nav_jsonArrayRequest"
+        android:name="com.examen.jsonwebservice.JsonArrayRequestPrueba"
+        android:label="fragment_json_array_request_prueba"
+        tools:layout="@layout/fragment_json_array_request_prueba" />
+    <fragment
+        android:id="@+id/nav_jsonArrayRequestPost"
+        android:name="com.examen.jsonwebservice.JsonArrayRequestPost"
+        android:label="fragment_json_array_request_post"
+        tools:layout="@layout/fragment_json_array_request_post" />
+
+
+</navigation>
